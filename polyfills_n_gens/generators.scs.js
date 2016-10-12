@@ -5,7 +5,7 @@ import 'babel-polyfill' //Его лучше подключить в одной e
 
 /* ПРИМЕР ИСПОЛЬЗОВАНИЯ
 co(function*() {
-  let result = yield new Promise(
+  let result = yield new Promise(  //Обратите внимание, что здесь нужно писать yield, а не yield*  !!!!
       resolve = > setTimeout(resolve, 1000, 1)
   )
   console.log(result); // 1
